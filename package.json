@@ -1,0 +1,38 @@
+{
+  "name": "@abcaustralia/babel-plugin-extract-types",
+  "version": "1.1.2",
+  "description": "",
+  "main": "src/babel-plugin-extract-types.js",
+  "abc": {},
+  "scripts": {
+    "build": "npm run copy-src && npm run copy-packageDescriptor && npm run copy-docs",
+    "copy-src": "copyfiles ./src/* ./npm_build/ && copyfiles ./src/**/* ./npm_build/",
+    "copy-docs": "copyfiles ./*.md ./npm_build",
+    "copy-packageDescriptor": "copyfiles package.json ./npm_build/"
+  },
+  "dependencies": {
+    "@babel/core": "7.0.0",
+    "@babel/types": "^7.2.0",
+    "ast-pretty-print": "^2.0.1",
+    "babel-errors": "^1.1.1",
+    "babel-explode-module": "^3.0.0",
+    "babel-file": "^3.0.0",
+    "babel-file-loader": "^2.0.0",
+    "babel-flow-identifiers": "^1.1.3",
+    "babel-helper-simplify-module": "^2.2.1",
+    "babel-identifiers": "^2.0.0",
+    "babel-normalize-comments": "^1.0.2",
+    "babel-react-components": "^1.1.0",
+    "babel-template": "^6.26.0",
+    "babel-type-scopes": "^1.1.0",
+    "babylon": "^6.18.0",
+    "babylon-options": "^2.0.1",
+    "copyfiles": "2.1.0",
+    "react": "16.8.1",
+    "react-dom": "16.8.1",
+    "strip-indent": "^2.0.0"
+  },
+  "keywords": [],
+  "author": "Dana Mison",
+  "license": "Apache 2.0"
+}
